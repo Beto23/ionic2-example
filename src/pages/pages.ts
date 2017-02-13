@@ -1,0 +1,5 @@
+export { GamePage } from './game'
+export { MyTeamsPage } from './my-teams'
+export { TeamsPage } from './teams'
+export { TeamsDetailPage } from './teams-detail'
+export { TournamentsPage } from './tournaments'
