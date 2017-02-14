@@ -4,6 +4,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import * as _ from 'lodash';
 
 import { EliteApiService } from './../../app/shared/';
+import { GamePage } from './../game/'
 
 @Component({
   selector: 'page-teams-detail',
@@ -53,6 +54,11 @@ export class TeamsDetailPage {
     else {
       return "";
     }
+  }
+
+  private gameClicked($event, game) {
+    let sourceGame = this.tourneyData.games.find(g => g.id === game.gameId);
+    this.navCtrl.parent.parent.push(GamePage, sourceGame);
   }
 
 }
