@@ -14,7 +14,7 @@
 
 
 <ion-content>
-  <button (click)="itemTapped()" ion-item>CF America</button>
-  <button (click)="itemTapped()" ion-item>Santos</button>
-  <button (click)="itemTapped()" ion-item>Xolos</button>
+  <button *ngFor="let team of teams"  (click)="itemTapped($event, team)" ion-item>
+    {{team.name}}
+  </button>
 </ion-content>

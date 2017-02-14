@@ -7,7 +7,9 @@ import {
   TeamsPage,
   TournamentsPage,
   TeamsDetailPage,
-  MyTeamsPage
+  MyTeamsPage,
+  StandingsPage,
+  TeamHomePage
 } from '../pages/pages';
 
 @NgModule({
@@ -17,7 +19,9 @@ import {
     TeamsPage,
     TournamentsPage,
     TeamsDetailPage,
-    MyTeamsPage
+    MyTeamsPage,
+    StandingsPage,
+    TeamHomePage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -29,7 +33,9 @@ import {
     TeamsPage,
     TournamentsPage,
     TeamsDetailPage,
-    MyTeamsPage
+    MyTeamsPage,
+    StandingsPage,
+    TeamHomePage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
