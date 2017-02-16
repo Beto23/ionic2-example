@@ -18,7 +18,17 @@
 
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+  <ion-list>
+    <ion-list-header>Followed Teams </ion-list-header>
+    <button ion-item *ngFor="let item of favorites" (click)="favoriteTapped($event, item)" >
+      <ion-icon name="start"></ion-icon>
+      {{item.team.name}}
+      <p>
+        {{item.tournamentName}}
+      </p>
+    </button>
+  </ion-list>
   <button ion-button (click)="goToTournamets()">Find a Tornament</button>
   
 </ion-content>
